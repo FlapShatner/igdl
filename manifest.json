@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "IG Downloader",
+  "version": "0.1",
+  "description": "Download Instagram posts",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["src/js/content.js"],
+      "css": ["src/css/styles.css"]
+    },
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["src/js/global/observer.js", "src/js/global/utils.js"],
+      "css": [],
+      "world": "MAIN"
+    }
+  ]
+}
