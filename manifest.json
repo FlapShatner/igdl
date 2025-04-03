@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "IG Downloader",
   "version": "0.1",
-  "description": "Download Instagram posts",
+  "description": "Download Instagram media from posts, stories, and reels",
   "permissions": ["activeTab", "scripting"],
   "content_scripts": [
     {
